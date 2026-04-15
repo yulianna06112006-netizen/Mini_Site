@@ -1,0 +1,29 @@
+<?php include "header.php"; ?>
+<section class="product-page">
+            <div class="tovar-img-page">
+                <img src="klava.png" alt="" width="800px">
+            </div>
+            <div class="tovar-info-page">
+                <h1>LOFREE EH112S Bluetooth-Blossom</h1>
+                <div class="price">
+                    <b>17 000руб. </b> 
+                </div>
+                <br>
+                <br>
+                <p>Опиание</p>
+                <p>
+                    LOFREE Blossom - это 79 клавиш с 79 различными цветами косметики - лучший подарок для вашей девушки! Яркие колпачки клавиш и розово-золотой фон клавиатуры идеально сочетаются в прекрасном произведении искусства.
+                </p>
+                <br>
+                <button id="buyBtn">Buy</button>
+                
+            </div>
+        </section>
+   
+   <script>
+    const btn = document.getElementById('buyBtn')
+    btn.addEventListener('click', (e)=>{
+        alert('Покупка совершена!')
+    })
+   </script>
+<?php include "footer.php"; ?>

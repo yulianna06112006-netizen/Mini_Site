@@ -1,0 +1,177 @@
+body{
+            padding: 0%;
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Шапочка сайта*/
+        header{
+            width: 100%;
+            height: auto;
+            background-color: rgb(96, 37, 49);
+            padding: 30px;
+            box-sizing: border-box;
+
+        }
+        nav{
+            width: 100%;
+            height: auto; 
+        }
+        nav > ul{
+            display: flex;
+            gap: 50px;
+            margin: 0%;
+            padding: 0%;
+            justify-content: center; 
+        }
+        nav > ul > li{
+            list-style-type: none;
+        }
+        li > a{
+            color:rgb(181, 52, 52);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0%;
+        }
+        li>a:hover{
+            color:rgb(234, 75, 75);
+        }
+        /*Подвал сайта*/
+       footer{
+            width: 100%;
+            height: 500px;
+            background-color: rgb(30, 90, 133);
+       }
+       footer>nav>ul>li>a{
+            color:rgb(63, 151, 209);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0%;
+       }
+       footer>nav>ul>li>a:hover{
+            color:rgb(98, 225, 237);
+       }
+       footer>p{
+        color:rgb(89, 180, 241);
+        margin: 0%;
+       }
+        /*контент страницы*/
+       main{
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+            display: flex;
+       }
+       .popular-tovar{
+            width: 30%;
+            height: 450;
+            
+       }
+       .popular-tovar>h3{
+        text-align: center;
+       }
+    .tovar-list{
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        box-sizing: border-box;
+
+    }
+    .tovar-card{
+        width: 550px;
+        height: 570px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        border-radius: 30px;
+    }
+    .tovar-img{
+        justify-content: center;
+        display: flex;
+    }
+    .tovar-info{
+        justify-content: center;
+        display: grid;
+        margin-bottom: 20px;
+    }
+    .tovar-info>a{
+        color: rgb(255, 255, 255);
+        background-color: rgb(30, 90, 133);
+        padding: 5px 20px;
+        border-radius: 20px;
+        justify-content: center;
+        display: grid; 
+        text-decoration: none;
+    }
+    .tovar-info>a:hover{
+        color: white;
+        background-color:  rgb(96, 37, 49);
+        transition: all 0.5s ease;
+    }
+    .product-page{
+        width: 100%;
+        display: flex;
+        height: auto;
+        gap: 20px;
+        padding: 50px 0;
+    }
+    .tovar-img-page{
+        width: 45%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .tovar-info-page{
+        width: 45%;
+        height: auto;
+    }
+    .tovar-info-page>h1{
+        justify-content: center;
+        display: flex;
+        margin-bottom: 50px;
+    }
+.price {
+    width: fit-content;       /* Ширина подстраивается под содержимое */
+    min-width: 110px;         /* Минимальная ширина, чтобы цифра не сжималась */
+    height: auto;
+    background-color: rgb(214, 118, 137);
+    padding: 10px 15px;       /* Чуть больше отступов для красоты */
+    border-radius: 20px;
+    white-space: nowrap;      /* 🔑 Запрещает перенос текста на новую строку */
+}
+
+.price > b {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;        /* Опционально: можно сделать текст чуть крупнее */
+}
+    .tovar-info-page>button{
+        width: 10%;
+        height: auto;
+        border-radius: 10px;
+        border: 0;
+        padding: 10px 0;
+        background-color: rgb(96, 37, 49);
+        color: antiquewhite;
+        transition: all 0.5s ease;
+    }
+    .tovar-info-page>button:hover{
+        cursor: pointer;
+        background: transparent;
+        color: brown;
+        border: 1px solid brown;
+    }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tovar-card {
+    animation: fadeIn 0.6s ease-out;
+}
