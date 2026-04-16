@@ -62,9 +62,8 @@ body{
             display: flex;
        }
        .popular-tovar{
-            width: 30%;
-            height: 450;
-            
+            width: 100%;
+            height: auto;
        }
        .popular-tovar>h3{
         text-align: center;
